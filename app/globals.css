@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+
+  /* Desert Editorial — the customer-facing brand (rust/cream, serif headlines) */
+  --cream: #fbf4e8;
+  --cream-deep: #f1e2cb;
+  --paper: #fffdf8;
+  --rust: #9c3b1c;
+  --rust-deep: #7a2e15;
+  --rust-tint: #f3e0d2;
+  --ink: #2b2118;
+  --ink-soft: #6b5d4e;
+  --sand: #c9a87c;
+  --olive: #4b6a44;
+  --olive-tint: #e7eee3;
+  --line: #e3d3b8;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-paper: var(--paper);
+  --color-rust: var(--rust);
+  --color-rust-deep: var(--rust-deep);
+  --color-rust-tint: var(--rust-tint);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-sand: var(--sand);
+  --color-olive: var(--olive);
+  --color-olive-tint: var(--olive-tint);
+  --color-line: var(--line);
+
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, .serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  letter-spacing: -0.01em;
+}
